@@ -1,0 +1,14 @@
+<br>
+
+
+<form name="commentForm" #commentForm="ngForm">
+  <input class = "boxComment" type="text" [(ngModel)] = "comment.content"  name="commentContent" minlength="2">
+  <button class = "createComment" (click)="createComment()" > Add Comment </button>
+</form>
+
+
+
+
+
+
+

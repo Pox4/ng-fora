@@ -1,0 +1,54 @@
+.createComment{
+  position: absolute;
+
+}
+
+.boxComment{
+
+  width:180px;
+  height: 45px;
+
+}
+
+.createComment{
+
+
+  position: absolute;
+  text-align: center;
+
+  width:100px;
+  height: 50px;
+  color: indigo;
+  right: 37%;
+
+
+
+}
+
+
+.createComment {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+
+  border-radius: 18px;
+  text-shadow: 2px 0px 1px #000000;
+  font-family: Georgia;
+  color: #fffaff;
+  font-size: 12px;
+
+  text-decoration: none;
+}
+
+.createComment:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

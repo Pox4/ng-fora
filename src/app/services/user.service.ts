@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {User} from "../models/models";
 
 
 export interface LoginService{
@@ -9,6 +10,7 @@ export interface LoginService{
 @Injectable()
 export class LoginServiceImpl implements LoginService{
 
+  logged:User;
 
   getUserId(){
     return 12;

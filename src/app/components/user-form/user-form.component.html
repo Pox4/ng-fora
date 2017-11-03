@@ -1,9 +1,16 @@
+<body>
+
+<h3> Add new User :</h3>
+
 <form name="form" #userForm="ngForm">
 
   <label>Name : <input type="text" [(ngModel)] = "user.name" name="userName" minlength="5">
 
   </label>
+  <label>Email : <input type="text" [(ngModel)] = "user.email" name="userEmail" minlength="5">
+  </label>
 
   <button (click)="createUser()" [disabled] = "!userForm.form.valid"> Add User </button>
 
 </form>
+</body>

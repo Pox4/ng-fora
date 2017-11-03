@@ -1,0 +1,57 @@
+body {
+  background-color: silver;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+
+  background-color: silver;
+  width:100%;
+}
+
+
+h1 {
+  color: gold;
+  font-family: American Typewriter, serif;
+  font-size: 2.5em;
+
+  font-weight: normal;
+  text-align: center;
+  padding: 1% 5% 1% 5%;
+  margin: 0% 30.5% 1% 30.5%;
+  border: 1px solid #e7e2d7;
+  border-radius: 0px;
+  -webkit-border-radius: .8em;
+  -moz-border-radius: .8em;
+
+  display: block;
+  position: relative;
+
+  animation: cos 1s infinite linear alternate;
+
+}
+
+@keyframes cos {
+  0% {
+    transform: rotate3d(1,1,1,0deg );
+    left: 20px;
+
+  }
+  100% {
+    transform: rotate3d(1,1,1,0deg);
+    left: -20px;
+
+  }
+}
+
+
+.radio {
+  position: relative;
+  text-align: left;
+
+}
+
+body{
+  text-align: center;
+}

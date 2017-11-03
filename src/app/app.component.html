@@ -1,16 +1,23 @@
-<h1>Selected : {{state}}</h1>
+<body>
+
+<h1>Forum Chouquette</h1>
 
 
-<label> Users : <input type="radio" name="choix"
+<label> Users : <input class = "radio" type="radio" name="choix"
                        [(ngModel)] = "state" [value] ="'users'"> </label>
-<label> Topics : <input type="radio" name="choix" checked
+<label> Topics : <input class = "radio" type="radio" name="choix" checked
                         [(ngModel)] = "state" [value] ="'topics'"> </label>
+
+
+<br>
+
+
 
 
 <rc-users *ngIf="state === 'users'"></rc-users>
 <rc-topics *ngIf="state === 'topics'"></rc-topics>
 
 
-
+</body>
 
 

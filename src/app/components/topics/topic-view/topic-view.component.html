@@ -1,0 +1,21 @@
+<br>
+<h2>{{topic.title}}</h2>
+<div class = "author"> by : {{topic.user.name}}</div>
+
+
+<br>
+
+<div class ="comment" *ngFor="let currentComment of topic.comments; let e=even; let o=odd;" [ngClass] = "{odd:o, even:e}">
+
+  <rc-comment [comment] ="currentComment"></rc-comment>
+
+
+
+</div>
+
+<br>
+
+
+<rc-comment-form  [topic] = topic (addComment)="updateComments($event)" ></rc-comment-form>
+
+

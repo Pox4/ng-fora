@@ -1,9 +1,40 @@
-<h2>Hello Chouquette</h2>
+<body>
+
+
 
 <div *ngFor="let user of getUsers(); let e=even; let o=odd;" [ngClass] = "{odd:o, even:e}" >
+  <br>
+  <span>
   {{user.name}} - {{"( id : "+ user.id + ")"}} - {{user.email}}
+</span>
 </div>
 
 <br>
 
 <rc-user-form (eventEmitter)="updateList($event)"></rc-user-form>
+
+
+
+<br>
+<br>
+
+<select [(ngModel)]="usersService.logged">
+  <option *ngFor="let user of getUsers()" [ngValue]="user">{{user.name}}</option>
+</select>
+
+logged: {{usersService.logged?.name}} <!-- verification du select -->
+
+
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+
+</body>

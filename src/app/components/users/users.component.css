@@ -1,7 +1,58 @@
 .even {
   color: cornflowerblue;
+  Font-Weight: Bold;
 }
 
 .odd {
-  color: greenyellow;
+  color: forestgreen;
+  Font-Weight: Bold;
 }
+
+
+body {
+  background-color: silver;
+}
+
+div {
+
+  background-color: silver;
+
+
+
+}
+
+table
+{
+  border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+  text-align: center;
+}
+td
+{
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+
+h2 {
+  color: gold;
+  font-family: American Typewriter, serif;
+  font-size: 2.5em;
+
+  font-weight: normal;
+  text-align: center;
+  padding: 1% 5% 1% 5%;
+  margin: 0% 30.5% 1% 30.5%;
+  border: 1px solid #e7e2d7;
+  border-radius: 0px;
+  -webkit-border-radius: .8em;
+  -moz-border-radius: .8em;
+
+  display: block;
+  position: relative;
+
+  animation: cos 1s infinite linear alternate;
+
+}
+
+
