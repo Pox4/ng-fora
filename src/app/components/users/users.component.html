@@ -1,10 +1,10 @@
 <body>
 
+<h3> Users : </h3>
 
-
-<div *ngFor="let user of getUsers(); let e=even; let o=odd;" [ngClass] = "{odd:o, even:e}" >
-  <br>
+<div *ngFor="let user of getUsers(); let e=even; let o=odd;" [ngClass]="{odd:o, even:e}">
   <span>
+    <br>
   {{user.name}} - {{"( id : "+ user.id + ")"}} - {{user.email}}
 </span>
 </div>
@@ -12,7 +12,6 @@
 <br>
 
 <rc-user-form (eventEmitter)="updateList($event)"></rc-user-form>
-
 
 
 <br>
@@ -24,17 +23,5 @@
 
 logged: {{usersService.logged?.name}} <!-- verification du select -->
 
-
-
-<br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br>
 
 </body>

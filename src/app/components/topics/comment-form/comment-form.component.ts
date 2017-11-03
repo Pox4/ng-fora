@@ -11,48 +11,48 @@ import {UsersService} from "../../../services/users.service";
 export class CommentFormComponent implements OnInit {
 
 
-   comment:Comment;
-  copy:Comment;
-  @Input() topic:Topic;
+  comment: Comment;
+  copy: Comment;
+  @Input() topic: Topic;
 
   @Output() addComment: EventEmitter<Comment> = new EventEmitter();
 
 
-  constructor(public topicsService: TopicsService, public usersService: UsersService) { }
+  constructor(public topicsService: TopicsService, public usersService: UsersService) {
+  }
 
   ngOnInit() {
 
 
-this.comment = {
-
-    id: 12,
-    content: "",
-    user: {
-      name: "Jojo",
-      id: 23,
-      email: "toto@robusta.io",
-      admin: false
-    }
-    }
-
-/*
     this.comment = {
 
       id: 12,
       content: "",
-      user: this.usersService.logged
+      user: {
+        name: "Jojo",
+        id: 23,
+        email: "toto@robusta.io",
+        admin: false
+      }
     }
-*/
 
-}
+    /*
+        this.comment = {
+
+          id: 12,
+          content: "",
+          user: this.usersService.logged
+        }
+    */
+
+  }
 
 
+  createComment() {
 
-createComment() {
-
-  this.copy = {...this.comment}
-  this.topicsService.createComment(this.comment, this.topic).subscribe(response => this.addComment.emit(this.copy));
-}
+    this.copy = {...this.comment};
+    this.topicsService.createComment(this.comment, this.topic).subscribe(response => this.addComment.emit(this.copy));
+  }
 
 }
 

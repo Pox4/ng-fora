@@ -7,21 +7,24 @@ import {User} from "../models/models";
 export class UsersService {
 
 
-
   constructor(public http: Http) {
 
   }
 
-  getUsers():Observable<User[]> {
+  getUsers(): Observable<User[]> {
 
     return this.http.get("http://localhost:8080/jax-rs-1/api/users")
-                     .map(response => response.json());
+      .map(response => response.json());
   }
 
 
-  createUser(user:User){
+  createUser(user: User) {
 
-   return this.http.post("http://localhost:8080/jax-rs-1/api/users", user);
+    return this.http.post("http://localhost:8080/jax-rs-1/api/users", user);
+  }
+
+  getLogged() {
+
   }
 }
 

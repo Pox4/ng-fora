@@ -8,7 +8,6 @@
   Font-Weight: Bold;
 }
 
-
 body {
   background-color: silver;
 }
@@ -17,22 +16,7 @@ div {
 
   background-color: silver;
 
-
-
 }
-
-table
-{
-  border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
-  text-align: center;
-}
-td
-{
-  border: 1px solid black;
-  text-align: center;
-}
-
-
 
 h2 {
   color: gold;
@@ -51,8 +35,25 @@ h2 {
   display: block;
   position: relative;
 
-  animation: cos 1s infinite linear alternate;
+  animation: cos 5s infinite linear alternate;
 
 }
 
+@keyframes cos {
+  0% {
+    transform: rotate3d(1, 1,1, 360deg);
+    left: 30px;
+    bottom: 30px;
 
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, -360deg);
+    left: -30px;
+    bottom: -30px;
+
+  }
+}
+
+h3 {
+  color: darkred;
+}

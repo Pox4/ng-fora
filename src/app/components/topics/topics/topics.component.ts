@@ -10,11 +10,10 @@ import {TopicsService} from "../../../services/topics.service";
 export class TopicsComponent implements OnInit {
 
   topics: Topic[] = [];
-  @Input() topic:Topic;
+  @Input() topic: Topic;
 
 
   constructor(public topicsService: TopicsService) {
-
 
 
   }
@@ -26,8 +25,8 @@ export class TopicsComponent implements OnInit {
   }
 
 
-  getTopicAuthor(){
-    if (this.topic.user && this.topic.user.name){
+  getTopicAuthor() {
+    if (this.topic.user && this.topic.user.name) {
       return this.topic.user.name;
     }
 
